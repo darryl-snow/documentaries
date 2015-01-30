@@ -1,0 +1,388 @@
+extends templates/master
+
+block title
+	#{title}
+
+block styles
+
+block content
+
+	.hero
+		img(src="images/1.jpg", alt="Shipton's arc")
+
+		.ui.inverted.circular.segment
+			h1.ui.inverted.header #{title}
+				.sub.header Cultural documentataries
+
+	section
+		.ui.centered.page.grid
+
+			.main-content.sixteen.wide.column
+
+				.ui.secondary.menu
+					a.active.item(href="", title="") Recent
+					a.item(href="", title="") Popular
+
+				.ui.buttons
+					.ui.vertical.animated.button.tiny.active
+						.hidden.content
+							i.sort.numeric.ascending.icon
+							//- i.sort.numeric.descending.icon
+						.visible.content
+							i.yen.icon
+					.ui.vertical.animated.button.tiny
+						.hidden.content
+							//- i.sort.content.ascending.icon
+							i.sort.content.descending.icon
+						.visible.content
+							i.heart.icon
+
+				.ui.search
+					.ui.icon.input
+						input.prompt(type="text", placeholder="Search...")
+						i.search.icon
+					.results
+
+				.ui.form
+					.two.fields
+						.field
+							label Running time
+							select.ui.dropdown
+								option(value="15") 0 - 15 mins
+								option(value="30") 15 - 30 mins
+								option(value="60") 30 - 60 mins
+								option(value="more") 60+ mins
+
+						.field
+							label Director
+							select.ui.search.dropdown
+								option(value="wu ming") Wu Ming
+								option(value="mou ren") Mou ren
+
+				.ui.divider
+
+				.documentaries
+
+					.documentary
+						.ui.special.cards
+							.ui.fluid.card
+								.ui.teal.right.ribbon.label ¥15
+								.dimmable.image
+									.ui.dimmer
+										.content
+											.center
+												a.ui.inverted.button(href="", title="")
+													i.info.icon
+													| More info
+									img(src="images/2.jpg")
+								.content
+									.header Documentary Name
+									.meta
+										a.group Wu Ming
+									.description Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+									.ui.small.labels
+										a.ui.small.label(href="", title="") Minzus
+										a.ui.small.label(href="", title="") Inner Mongolia
+								.extra.content
+									.right.floated.content
+										a.ui.animated.fade.blue.button(href="", title="")
+											.visible.content
+												i.info.icon
+												| Find out more
+											.hidden.content ¥15
+									a.ui.circular.icon.button(href="", title="")
+										i.heart.icon
+										|  3
+
+					.documentary
+						.ui.special.cards
+							.ui.fluid.card
+								.ui.teal.right.ribbon.label ¥15
+								.dimmable.image
+									.ui.dimmer
+										.content
+											.center
+												a.ui.inverted.button(href="", title="")
+													i.info.icon
+													| More info
+									img(src="images/3.jpg")
+								.content
+									.header Documentary Name
+									.meta
+										a.group Wu Ming
+									.description Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+									.ui.small.labels
+										a.ui.small.label(href="", title="") Minzus
+										a.ui.small.label(href="", title="") Inner Mongolia
+								.extra.content
+									.right.floated.content
+										a.ui.animated.fade.blue.button(href="", title="")
+											.visible.content
+												i.info.icon
+												| Find out more
+											.hidden.content ¥15
+									a.ui.circular.icon.button(href="", title="")
+										i.heart.icon
+										|  3
+
+					.documentary
+						.ui.special.cards
+							.ui.fluid.card
+								.ui.teal.right.ribbon.label ¥15
+								.dimmable.image
+									.ui.dimmer
+										.content
+											.center
+												a.ui.inverted.button(href="", title="")
+													i.info.icon
+													| More info
+									img(src="images/4.jpg")
+								.content
+									.header Documentary Name
+									.meta
+										a.group Wu Ming
+									.description Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+									.ui.small.labels
+										a.ui.small.label(href="", title="") Minzus
+										a.ui.small.label(href="", title="") Inner Mongolia
+								.extra.content
+									.right.floated.content
+										a.ui.animated.fade.blue.button(href="", title="")
+											.visible.content
+												i.info.icon
+												| Find out more
+											.hidden.content ¥15
+									a.ui.circular.icon.button(href="", title="")
+										i.heart.icon
+										|  3
+
+					.documentary
+						.ui.special.cards
+							.ui.fluid.card
+								.ui.teal.right.ribbon.label ¥15
+								.dimmable.image
+									.ui.dimmer
+										.content
+											.center
+												a.ui.inverted.button(href="", title="")
+													i.info.icon
+													| More info
+									img(src="images/5.jpg")
+								.content
+									.header Documentary Name
+									.meta
+										a.group Wu Ming
+									.description Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+									.ui.small.labels
+										a.ui.small.label(href="", title="") Minzus
+										a.ui.small.label(href="", title="") Inner Mongolia
+								.extra.content
+									.right.floated.content
+										a.ui.animated.fade.blue.button(href="", title="")
+											.visible.content
+												i.info.icon
+												| Find out more
+											.hidden.content ¥15
+									a.ui.circular.icon.button(href="", title="")
+										i.heart.icon
+										|  3
+
+					.documentary
+						.ui.special.cards
+							.ui.fluid.card
+								.ui.teal.right.ribbon.label ¥15
+								.dimmable.image
+									.ui.dimmer
+										.content
+											.center
+												a.ui.inverted.button(href="", title="")
+													i.info.icon
+													| More info
+									img(src="images/6.jpg")
+								.content
+									.header Documentary Name
+									.meta
+										a.group Wu Ming
+									.description Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+									.ui.small.labels
+										a.ui.small.label(href="", title="") Minzus
+										a.ui.small.label(href="", title="") Inner Mongolia
+								.extra.content
+									.right.floated.content
+										a.ui.animated.fade.blue.button(href="", title="")
+											.visible.content
+												i.info.icon
+												| Find out more
+											.hidden.content ¥15
+									a.ui.circular.icon.button(href="", title="")
+										i.heart.icon
+										|  3
+
+					.documentary
+						.ui.special.cards
+							.ui.fluid.card
+								.ui.teal.right.ribbon.label ¥15
+								.dimmable.image
+									.ui.dimmer
+										.content
+											.center
+												a.ui.inverted.button(href="", title="")
+													i.info.icon
+													| More info
+									img(src="images/7.jpg")
+								.content
+									.header Documentary Name
+									.meta
+										a.group Wu Ming
+									.description Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+									.ui.small.labels
+										a.ui.small.label(href="", title="") Minzus
+										a.ui.small.label(href="", title="") Inner Mongolia
+								.extra.content
+									.right.floated.content
+										a.ui.animated.fade.blue.button(href="", title="")
+											.visible.content
+												i.info.icon
+												| Find out more
+											.hidden.content ¥15
+									a.ui.circular.icon.button(href="", title="")
+										i.heart.icon
+										|  3
+
+					.documentary
+						.ui.special.cards
+							.ui.fluid.card
+								.ui.teal.right.ribbon.label ¥15
+								.dimmable.image
+									.ui.dimmer
+										.content
+											.center
+												a.ui.inverted.button(href="", title="")
+													i.info.icon
+													| More info
+									img(src="images/8.jpg")
+								.content
+									.header Documentary Name
+									.meta
+										a.group Wu Ming
+									.description Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+									.ui.small.labels
+										a.ui.small.label(href="", title="") Minzus
+										a.ui.small.label(href="", title="") Inner Mongolia
+								.extra.content
+									.right.floated.content
+										a.ui.animated.fade.blue.button(href="", title="")
+											.visible.content
+												i.info.icon
+												| Find out more
+											.hidden.content ¥15
+									a.ui.circular.icon.button(href="", title="")
+										i.heart.icon
+										|  3
+
+					.documentary
+						.ui.special.cards
+							.ui.fluid.card
+								.ui.teal.right.ribbon.label ¥15
+								.dimmable.image
+									.ui.dimmer
+										.content
+											.center
+												a.ui.inverted.button(href="", title="")
+													i.info.icon
+													| More info
+									img(src="images/9.jpg")
+								.content
+									.header Documentary Name
+									.meta
+										a.group Wu Ming
+									.description Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+									.ui.small.labels
+										a.ui.small.label(href="", title="") Minzus
+										a.ui.small.label(href="", title="") Inner Mongolia
+								.extra.content
+									.right.floated.content
+										a.ui.animated.fade.blue.button(href="", title="")
+											.visible.content
+												i.info.icon
+												| Find out more
+											.hidden.content ¥15
+									a.ui.circular.icon.button(href="", title="")
+										i.heart.icon
+										|  3
+
+					.documentary
+						.ui.special.cards
+							.ui.fluid.card
+								.ui.teal.right.ribbon.label ¥15
+								.dimmable.image
+									.ui.dimmer
+										.content
+											.center
+												a.ui.inverted.button(href="", title="")
+													i.info.icon
+													| More info
+									img(src="images/10.jpg")
+								.content
+									.header Documentary Name
+									.meta
+										a.group Wu Ming
+									.description Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+									.ui.small.labels
+										a.ui.small.label(href="", title="") Minzus
+										a.ui.small.label(href="", title="") Inner Mongolia
+								.extra.content
+									.right.floated.content
+										a.ui.animated.fade.blue.button(href="", title="")
+											.visible.content
+												i.info.icon
+												| Find out more
+											.hidden.content ¥15
+									a.ui.circular.icon.button(href="", title="")
+										i.heart.icon
+										|  3
+
+			.ui.sixteen.wide.centered.column
+
+				.ui.pagination.menu
+					a.icon.item
+						i.left.arrow.icon
+					a.active.item 1
+					.disabled.item ...
+					a.item 10
+					a.icon.item
+						i.right.arrow.icon
+
+	footer.footer
+		.ui.centred.page.grid
+			.twelve.wide.column
+				h2 About #{title}
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			.three.wide.column
+				.ui.vertical.text.menu
+					a.item(href="", title="")
+						i.facebook.icon
+						| Facebook
+					a.item(href="", title="")
+						i.twitter.icon
+						| Twitter
+					a.item(href="", title="")
+						i.mail.outline.icon
+						| Email
+					a.item(href="", title="")
+						i.mail.wechat.icon
+						| Wechat
+
+	.language-switcher
+		.ui.right.pointing.dropdown.icon.inverted.basic.button
+			i.united.kingdom.flag
+			.menu
+				a.item(href="", title="")
+					i.united.kingdom.flag
+					| English
+				a.item(href="", title="")
+					i.china.flag
+					| Chinese
+
+
+block scripts
